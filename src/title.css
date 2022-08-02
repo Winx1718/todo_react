@@ -1,0 +1,16 @@
+.title {
+  margin: 70px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.title h1 {
+  color: hsl(0, 0%, 98%);
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 15px;
+}
+.title button {
+  background-color: transparent;
+  border: none;
+}
