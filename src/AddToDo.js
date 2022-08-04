@@ -13,7 +13,7 @@ export default function AddToDo() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setToDos((toDos) => [...toDos, { checked: false, item: { newToDo } }]);
+    setToDos((toDos) => [...toDos, { checked: false, item: newToDo }]);
   }
   function updateToDo(event) {
     setNewToDO(event.target.value);
@@ -26,7 +26,7 @@ export default function AddToDo() {
           <input type="text" onChange={updateToDo} className="todoTextBox" />
         </form>
       </div>
-      <ListedToDos todoList={toDos} />
+      <ListedToDos todos={toDos} />
     </div>
   );
 }
