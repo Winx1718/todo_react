@@ -1,13 +1,14 @@
 .title {
   margin: 70px 0 0 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .title h1 {
   color: hsl(0, 0%, 98%);
   font-weight: bold;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
   letter-spacing: 15px;
 }
 .title button {
