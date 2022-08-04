@@ -14,6 +14,15 @@ export default function ListedToDos(props) {
           );
         })}
       </div>
+      <span className="row">
+        <p>{props.todos.length} items left</p>
+        <form>
+          <input type="radio" value="All" />
+          <input type="radio" value="Active" />
+          <input type="radio" value="Completed" />
+        </form>
+        <button>Clear Completed</button>
+      </span>
     </section>
   );
 }
