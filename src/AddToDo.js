@@ -10,8 +10,11 @@ export default function AddToDo() {
     setNewToDO(event.target.value);
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" onChange={updateToDo} />
-    </form>
+    <div className="todo">
+      <form onSubmit={handleSubmit}>
+        <input type="radio"/>
+              <input type="text" onChange={updateToDo} className="todoTextBox" />
+      </form>
+    </div>
   );
 }

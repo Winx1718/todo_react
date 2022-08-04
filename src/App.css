@@ -2,3 +2,16 @@
   width: 100%;
   max-width: 540px;
 }
+.todo form {
+  width: 540px;
+  padding: 15px 40px;
+  border-radius: 3px;
+  border: 1px solid hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 98%);
+}
+.todo .todoTextBox {
+  font-size: 18px;
+  color: hsl(235, 19%, 35%);
+  border: none;
+  background-color: hsl(0, 0%, 98%);
+}
