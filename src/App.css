@@ -2,6 +2,9 @@
   width: 100%;
   max-width: 540px;
 }
+.todo{
+  margin-top: 15px;
+}
 .todo form {
   width: 540px;
   padding: 15px 40px;
@@ -14,4 +17,21 @@
   color: hsl(235, 19%, 35%);
   border: none;
   background-color: hsl(0, 0%, 98%);
+}
+.todoList {
+  margin-top: 10px;
+  width: 540px;
+  background: hsl(0, 0%, 98%);
+  border-radius: 4px;
+  padding:1rem;
+}
+.todoList .listItems {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: hsl(235, 19%, 35%);
+}
+.todoList .filters{
+  display: flex;
+  justify-content: space-between;
 }

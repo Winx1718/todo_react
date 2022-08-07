@@ -2,7 +2,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   background: url(./img/bg-desktop-light.jpg);
-  background-color: #fafafa;
+  background-color: hsl(236, 33%, 92%);
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;

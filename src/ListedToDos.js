@@ -1,25 +1,32 @@
 import React from "react";
+import check from "./img/icon-check.svg";
+import cross from "./img/icon-cross.svg";
 
 export default function ListedToDos(props) {
   console.log(props);
   return (
-    <section>
-      <div className="row">
+    <section className="todoList shadow">
+      <div>
         {props.todos.map(function (todos, index) {
           return (
-            <div key={index}>
-              <button></button>
-              <p>{todos.item}</p>
+            <div className="listItems" key={index}>
+              <button className="check">
+                <img src={check}></img>
+              </button>
+              <p className="item">{todos.item}</p>
+              <button className="cross">
+                <img src={cross}></img>
+              </button>
             </div>
           );
         })}
       </div>
-      <span className="row">
+      <span className="filters">
         <p>{props.todos.length} items left</p>
         <form>
-          <input type="radio" value="All" />
-          <input type="radio" value="Active" />
-          <input type="radio" value="Completed" />
+          <input type="radio" checked={true} value="All" />
+          <input type="radio" checked={true} value="Active" />
+          <input type="radio" checked={true} value="Completed" />
         </form>
         <button>Clear Completed</button>
       </span>
