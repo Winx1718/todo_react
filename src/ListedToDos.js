@@ -24,9 +24,9 @@ export default function ListedToDos(props) {
       <span className="filters">
         <p>{props.todos.length} items left</p>
         <form>
-          <input type="radio" checked={true} value="All" />
-          <input type="radio" checked={true} value="Active" />
-          <input type="radio" checked={true} value="Completed" />
+          <input type="button" value="All" />
+          <input type="button" value="Active" />
+          <input type="button" value="Completed" />
         </form>
         <button>Clear Completed</button>
       </span>

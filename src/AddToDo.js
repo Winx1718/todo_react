@@ -22,7 +22,7 @@ export default function AddToDo() {
     <div>
       <div className="todo shadow">
         <form onSubmit={handleSubmit}>
-          <input type="radio" />
+          <input type="button" />
           <input type="text" onChange={updateToDo} className="todoTextBox" />
         </form>
       </div>
