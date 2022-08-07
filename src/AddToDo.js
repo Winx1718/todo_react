@@ -21,12 +21,15 @@ export default function AddToDo() {
     setNewToDO(event.target.value);
   }
   function markTrue(event) {
+    let text = document.querySelector(".todoTextBox");
     if (completed === false) {
       setCompleted(true);
       event.currentTarget.classList.add("checked");
+      text.classList.add("completed");
     } else {
       setCompleted(false);
       event.currentTarget.classList.remove("checked");
+      text.classList.remove("completed");
     }
   }
   return (
