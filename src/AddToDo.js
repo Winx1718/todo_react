@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ListedToDos from "./ListedToDos";
+import TodoList from "./TodoList";
 import check from "./img/icon-check.svg";
 
 export default function AddToDo() {
@@ -24,11 +24,11 @@ export default function AddToDo() {
     let text = document.querySelector(".todoTextBox");
     if (completed === false) {
       setCompleted(true);
-      event.currentTarget.classList.add("checked");
+      event.currentTarget.classList.add("completed");
       text.classList.add("completed");
     } else {
       setCompleted(false);
-      event.currentTarget.classList.remove("checked");
+      event.currentTarget.classList.remove("completed");
       text.classList.remove("completed");
     }
   }
@@ -47,7 +47,7 @@ export default function AddToDo() {
           />
         </form>
       </div>
-      <ListedToDos todos={toDos} />
+      <TodoList todos={toDos} />
     </div>
   );
 }

@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
 .App {
   width: 100%;
   max-width: 540px;
@@ -24,10 +28,11 @@
   width: 30px;
   height: 30px;
 }
-.checked {
+button.completed, .completed button{
   background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
-.completed {
+li .completed,
+form .completed {
   font-style: italic;
   text-decoration: line-through;
 }
@@ -44,7 +49,7 @@
   border-radius: 4px;
   padding: 1rem;
 }
-.todoList .listItems {
+.listItems {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
