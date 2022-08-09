@@ -26,7 +26,7 @@ export default function CheckBox(props) {
           {props.item}
         </p>
         <button className="cross" onClick={removeItem}>
-          <img src={cross}></img>
+          <img src={cross} alt="Cross to delete items"></img>
         </button>
       </div>
     );
