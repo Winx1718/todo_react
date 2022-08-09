@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function TodoFilters(props) {
-  function clearAll(event) {
-    let items = document.getElementsByClassName(".completed");
+  function clearAll() {
+    let items = document.querySelectorAll(".completed");
     console.log(items);
   }
   return (
