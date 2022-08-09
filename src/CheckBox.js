@@ -20,7 +20,7 @@ export default function CheckBox(props) {
     return (
       <div className="listItems completed">
         <button className="checkBox checked" onClick={markBox}>
-          <img src={check}></img>
+          <img src={check} alt="Checkbox for completed items"></img>
         </button>
         <p className="item completed" id="item">
           {props.item}
@@ -34,13 +34,13 @@ export default function CheckBox(props) {
     return (
       <div className="listItems">
         <button className="checkBox" onClick={markBox}>
-          <img src={check}></img>
+          <img src={check} alt="Checkbox for completed items"></img>
         </button>
         <p className="item" id="item">
           {props.item}
         </p>
         <button className="cross" onClick={removeItem}>
-          <img src={cross}></img>
+          <img src={cross} alt="Cross to delete items"></img>
         </button>
       </div>
     );

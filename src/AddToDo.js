@@ -36,7 +36,7 @@ export default function AddToDo() {
     <div>
       <div className="todo shadow">
         <button className="checkbox" onClick={markTrue}>
-          <img src={check}></img>
+          <img src={check} alt="Checkbox for completed items"></img>
         </button>
         <form onSubmit={handleSubmit}>
           <input

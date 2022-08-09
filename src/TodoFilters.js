@@ -3,6 +3,7 @@ import React from "react";
 export default function TodoFilters(props) {
   function clearAll(event) {
     const items = document.getElementsByClassName(".completed");
+    console.log(items);
   }
   return (
     <div className="filters">
