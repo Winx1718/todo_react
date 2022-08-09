@@ -24,11 +24,11 @@ export default function AddToDo() {
     let text = document.querySelector(".todoTextBox");
     if (completed === false) {
       setCompleted(true);
-      event.currentTarget.classList.add("completed");
+      event.currentTarget.classList.add("checked");
       text.classList.add("completed");
     } else {
       setCompleted(false);
-      event.currentTarget.classList.remove("completed");
+      event.currentTarget.classList.remove("checked");
       text.classList.remove("completed");
     }
   }

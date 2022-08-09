@@ -28,7 +28,8 @@ ul {
   width: 30px;
   height: 30px;
 }
-button.completed, .completed button{
+button.checked,
+.checked button {
   background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 li .completed,
@@ -66,4 +67,8 @@ form .completed {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+.listItems .cross {
+  border: none;
+  background-color: transparent;
 }

@@ -4,12 +4,13 @@ import cross from "./img/icon-cross.svg";
 
 export default function CheckBox(props) {
   function markBox(event) {
+    event.preventDefault();
     const listItem = event.target.parentElement;
     const item = event.target.nextElementSibling;
 
     item.classList.toggle("completed");
     listItem.classList.toggle("completed");
-    event.currentTarget.classList.toggle("completed");
+    event.currentTarget.classList.toggle("checked");
   }
   function removeItem(event) {
     const item = event.currentTarget.parentElement;
@@ -18,7 +19,7 @@ export default function CheckBox(props) {
   if (props.check === true) {
     return (
       <div className="listItems completed">
-        <button className="checkBox completed" onClick={markBox}>
+        <button className="checkBox checked" onClick={markBox}>
           <img src={check}></img>
         </button>
         <p className="item completed" id="item">
