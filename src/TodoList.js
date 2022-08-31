@@ -2,9 +2,6 @@ import React from "react";
 import CheckBox from "./CheckBox";
 
 export default function TodoList(props) {
-  function clearAll() {
-    
-  }
 
   return (
     <section className="todoList">
@@ -18,13 +15,13 @@ export default function TodoList(props) {
         })}
       </ul>
       <div className="filters">
-        <p>{props.length} items left</p>
+        <p>items left</p>
         <form>
           <input type="button" value="All" />
           <input type="button" value="Active" />
           <input type="button" value="Completed" />
         </form>
-        <button onClick={clearAll}>Clear Completed</button>
+        <button>Clear Completed</button>
       </div>
     </section>
   );

@@ -63,12 +63,12 @@ form .completed {
   height: 30px;
   border-radius: 50%;
 }
-.todoList .filters {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
 .listItems .cross {
   border: none;
   background-color: transparent;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
